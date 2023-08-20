@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="survey.css">
+</head>
+<body>
+  
+  <div class="container">
+    
+    <form id="Form1" action="http://localhost/form/send_email.php" method="post">
+      <h3>Personal Info</h3>
+      <input type="text" placeholder="Name" name="name" required>
+      <input type="text" placeholder="Student ID" name="student_id" required>
+      <input type="text" placeholder="Email Address" name="email" required>
+      <input type="text" placeholder="Address" name="address" required>
+
+      <div class="btn-box">
+        <button type="button" id="Next1">Next</button>
+      </div>
+    </form>
+
+    <form id="Form2">
+      <h3>Demographic Info</h3>
+      <input type="text" placeholder="Gender" name="gender" required>
+      <input type="text" placeholder="Age" name="age" required>
+      <input type="text" placeholder="Mobile Number" name="mobile_number" required>
+      <input type="text" placeholder="Nationality" name="nationality" required >
+
+      <div class="btn-box">
+        <button type="button" id="Back1">Back</button>
+        <button type="button" id="Next2">Next</button>
+      </div>
+    </form>
+
+    <form id="Form3">
+      <h3>Academic Info</h3>
+      <input type="text" placeholder="Field of Study" name="field_of_Study" required>
+      <input type="text" placeholder="Year of Study" name="year_of_study" required>
+      <input type="text" placeholder="GPA" name="gpa" required>
+      <input type="text" placeholder="Course Enrolled" name="course_enrolled" required>
+
+      <div class="btn-box">
+        <button type="button" id="Back2">Back</button>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+
+
+
+    <div class="step-row">
+      <div id="progress"></div> 
+      <div class="step-col"><small>Step 1</small></div>
+      <div class="step-col"><small>Step 2</small></div>
+      <div class="step-col"><small>Step 3</small></div>
+    </div>
+
+  </div>
+
+ 
+
+  <script src="survey.js"></script>
+
+</body>
+</html>
